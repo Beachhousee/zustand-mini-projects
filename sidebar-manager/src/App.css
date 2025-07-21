@@ -1,0 +1,58 @@
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+}
+
+.app {
+  display: flex;
+  height: 100vh;
+}
+
+.sidebar {
+  background-color: #1f2937;
+  color: white;
+  transition: width 0.3s;
+  overflow: hidden;
+}
+
+.sidebar.open {
+  width: 200px;
+}
+
+.sidebar.closed {
+  width: 60px;
+}
+
+.toggle-button {
+  padding: 10px;
+  background-color: #374151;
+  border: none;
+  color: white;
+  width: 100%;
+  cursor: pointer;
+}
+
+.menu {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.menu li {
+  padding: 15px 10px;
+  cursor: pointer;
+}
+
+.menu li:hover {
+  background-color: #4b5563;
+}
+
+.menu li.active {
+  background-color: #6b7280;
+  font-weight: bold;
+}
+
+.main {
+  flex: 1;
+  padding: 40px;
+}
