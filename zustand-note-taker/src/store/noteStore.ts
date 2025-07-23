@@ -1,16 +1,15 @@
-// src/store/noteStore.ts
+
 
 import { create } from 'zustand';
 
-//  Type for a single Note
 type Note = {
   id: string;
   title: string;
   content: string;
-  tags: string[]; // like ["personal", "work"]
+  tags: string[]; 
 };
 
-// Type for the entire store
+
 type NoteStore = {
   notes: Note[];
   searchTerm: string;
